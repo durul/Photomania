@@ -1,12 +1,15 @@
-# Photomania (alias Red Block)
+# Photomania
 
-uses new iOS 9.0 and UICollectionView for Popular Photos
+uses new iOS 9.0 and UICollectionView and  UICollectionViewCell for Popular Photos in 500px
 
-Xcode 7
+Requirements
+-------------------------------------------------
+Xcode 7.1
 
 Swift 2.1
 
-Deployment Target iOS 9.1
+Deployment Target = iOS 9.1
+
 Base SDK = iOS 9.1
 
 Asset Credits
