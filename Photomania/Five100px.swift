@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 
+// Creating a Collection Serializer for Comments
 public protocol ResponseObjectSerializable {
     init?(response: NSHTTPURLResponse, representation: AnyObject)
 }

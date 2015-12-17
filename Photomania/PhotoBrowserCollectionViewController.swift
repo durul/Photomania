@@ -173,6 +173,10 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         }
     }
     
+    /**********************************************************************
+     Optimizing and Refreshing
+     ********************************************************************/
+    
     func handleRefresh() {
         refreshControl.beginRefreshing()
         

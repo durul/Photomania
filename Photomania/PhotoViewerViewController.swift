@@ -27,7 +27,9 @@ class PhotoViewerViewController: UIViewController, UIScrollViewDelegate, UIPopov
         loadPhoto()
     }
     
+    // This time we making an Alamofire request inside another Alamofire request’s completion handler. The first request receives a JSON response and uses your new generic response serializer to create an instance of PhotoInfo out of that response.  (_, _, photoInfo: PhotoInfo?, error) in indicates the completion handler parameters: the first two underscores (“_” characters) mean the first two parameters are throwaways and there’s no need to explicitly name them request and response. The third parameter is explicitly declared as an instance of PhotoInfo, so the generic serializer automatically initializes and returns an object of this type, which contains the URL of the photo. The second Alamofire request uses the image serializer you created earlier to convert the NSData to a UIImage that you then display in an image view.
     func loadPhoto() {
+        
         Alamofire.request(Five100px.Router.PhotoInfo(self.photoID, .Large)).validate().responseObject() {
             (_, _, result: Result<PhotoInfo>) in
 
@@ -38,6 +40,9 @@ class PhotoViewerViewController: UIViewController, UIScrollViewDelegate, UIPopov
                     self.addButtomBar()
                     self.title = self.photoInfo!.name
                 }
+                
+                //The .validate() method call before requesting a response object is another easy-to-use Alamofire feature. Chaining it between your request and response validates that the response has a status code in the default acceptable range of 200 to 299. If validation fails, the response handler will have an associated error that you can deal with in your completion handler.
+                //Even if there’s an error, your completion handler will still be called. The fourth parameter error is an instance of NSError,
                 
                 Alamofire.request(.GET, self.photoInfo!.url).validate().responseImage() {
                     (_, _, result) in
