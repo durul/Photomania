@@ -22,7 +22,7 @@ class PhotoCommentsViewController: UITableViewController {
         tableView.estimatedRowHeight = 50.0
         
         title = "Comments"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismiss")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: #selector(PhotoCommentsViewController.dismiss))
         
         Alamofire.request(Five100px.Router.Comments(photoID, 1)).validate().responseCollection() {
             (_, _, result: Result<[Comment]>) in

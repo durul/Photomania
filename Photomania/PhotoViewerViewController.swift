@@ -76,12 +76,12 @@ class PhotoViewerViewController: UIViewController, UIScrollViewDelegate, UIPopov
         imageView.contentMode = .ScaleAspectFill
         scrollView.addSubview(imageView)
         
-        let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "handleDoubleTap:")
+        let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(PhotoViewerViewController.handleDoubleTap(_:)))
         doubleTapRecognizer.numberOfTapsRequired = 2
         doubleTapRecognizer.numberOfTouchesRequired = 1
         scrollView.addGestureRecognizer(doubleTapRecognizer)
         
-        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+        let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(PhotoViewerViewController.handleSingleTap(_:)))
         singleTapRecognizer.numberOfTapsRequired = 1
         singleTapRecognizer.numberOfTouchesRequired = 1
         singleTapRecognizer.requireGestureRecognizerToFail(doubleTapRecognizer)
@@ -108,14 +108,14 @@ class PhotoViewerViewController: UIViewController, UIScrollViewDelegate, UIPopov
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
         
-        items.append(barButtonItemWithImageNamed("hamburger", title: nil, action: "showDetails"))
+        items.append(barButtonItemWithImageNamed("hamburger", title: nil, action: #selector(PhotoViewerViewController.showDetails)))
         
         if photoInfo?.commentsCount > 0 {
-            items.append(barButtonItemWithImageNamed("bubble", title: "\(photoInfo?.commentsCount ?? 0)", action: "showComments"))
+            items.append(barButtonItemWithImageNamed("bubble", title: "\(photoInfo?.commentsCount ?? 0)", action: #selector(PhotoViewerViewController.showComments)))
         }
         
         items.append(flexibleSpace)
-        items.append(UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: "showActions"))
+        items.append(UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(PhotoViewerViewController.showActions)))
         items.append(flexibleSpace)
         
         items.append(barButtonItemWithImageNamed("like", title: "\(photoInfo?.votesCount ?? 0)"))

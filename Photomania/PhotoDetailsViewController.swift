@@ -28,7 +28,7 @@ class PhotoDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: "dismiss")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PhotoDetailsViewController.dismiss))
         tapGesture.numberOfTapsRequired = 1
         tapGesture.numberOfTouchesRequired = 1
         view.addGestureRecognizer(tapGesture)

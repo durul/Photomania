@@ -29,7 +29,7 @@ import Foundation
 */
 public protocol ResponseSerializer {
     /// The type of serialized object to be created by this `ResponseSerializer`.
-    typealias SerializedObject
+    associatedtype SerializedObject
 
     /**
         A closure used by response handlers that takes a request, response, and data and returns a result.
@@ -169,9 +169,7 @@ extension Request {
 
         - returns: A string response serializer.
     */
-    public static func stringResponseSerializer(
-        var encoding encoding: NSStringEncoding? = nil)
-        -> GenericResponseSerializer<String>
+    public static func stringResponseSerializer(var encoding encoding: NSStringEncoding? = nil) -> GenericResponseSerializer<String>
     {
         return GenericResponseSerializer { _, response, data in
             guard let validData = data else {

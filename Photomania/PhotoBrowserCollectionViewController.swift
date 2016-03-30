@@ -109,7 +109,7 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
         collectionView!.registerClass(PhotoBrowserCollectionViewLoadingCell.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: PhotoBrowserFooterViewIdentifier)
         
         refreshControl.tintColor = UIColor.whiteColor()
-        refreshControl.addTarget(self, action: "handleRefresh", forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(PhotoBrowserCollectionViewController.handleRefresh), forControlEvents: .ValueChanged)
         collectionView!.addSubview(refreshControl)
     }
     
@@ -166,7 +166,7 @@ class PhotoBrowserCollectionViewController: UICollectionViewController, UICollec
                         self.collectionView!.insertItemsAtIndexPaths(indexPaths)
                     }
                     
-                    self.currentPage++
+                    self.currentPage += 1
                 }
             }
             self.populatingPhotos = false
