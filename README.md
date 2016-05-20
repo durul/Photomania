@@ -4,13 +4,13 @@ uses new iOS 9.0 and UICollectionView and  UICollectionViewCell for Popular Phot
 
 Requirements
 -------------------------------------------------
-Xcode 7.1
+Xcode 7.3.1
 
-Swift 2.1
+Swift 2.2
 
-Deployment Target = iOS 9.1
+Deployment Target = iOS 8.1
 
-Base SDK = iOS 9.1
+Base SDK = iOS 9.3
 
 Asset Credits
 -------------------------------------------------
@@ -24,10 +24,3 @@ https://github.com/500px/api-documentation/blob/master/endpoints/photo/GET_photo
 json converter:
 https://jsonformatter.curiousconcept.com
 
-special thanks to Essan Parto
-
-Alamofire Tutorial Part 1: Getting Started
-http://www.raywenderlich.com/85080/beginning-alamofire-tutorial
-
-Alamofire Tutorial Part 2: Progress and Caching
-http://www.raywenderlich.com/87595/intermediate-alamofire-tutorial
