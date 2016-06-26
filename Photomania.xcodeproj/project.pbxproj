@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		22F2B01819A5C39900939296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F2B01719A5C39900939296 /* Images.xcassets */; };
 		22F2B02419A5C39A00939296 /* PhotomaniaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2B02319A5C39A00939296 /* PhotomaniaTests.swift */; };
 		22F2B03119A5C4B100939296 /* PhotoBrowserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2B03019A5C4B100939296 /* PhotoBrowserCollectionViewController.swift */; };
+		23E3E049CB5CF70FB706BCC6 /* Pods_Photomania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FF220C64BEF32CB81968F5 /* Pods_Photomania.framework */; };
 		BF2A19121BA41AC500B38EDC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2A19091BA41AB500B38EDC /* Alamofire.framework */; };
 		BF2A19131BA41AC500B38EDC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF2A19091BA41AB500B38EDC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFA3463E1BA6BFF000758461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3463D1BA6BFF000758461 /* LaunchScreen.storyboard */; };
@@ -98,15 +99,19 @@
 		22C66D8819B512BF00B72DCF /* DownloadedPhotoBrowserCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadedPhotoBrowserCollectionViewController.swift; sourceTree = "<group>"; };
 		22F2B00B19A5C39900939296 /* Photomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F2B00F19A5C39900939296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F2B01019A5C39900939296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22F2B01019A5C39900939296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Photomania/AppDelegate.swift; sourceTree = "<group>"; };
 		22F2B01519A5C39900939296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F2B01719A5C39900939296 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22F2B01D19A5C39A00939296 /* PhotomaniaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotomaniaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F2B02219A5C39A00939296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F2B02319A5C39A00939296 /* PhotomaniaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotomaniaTests.swift; sourceTree = "<group>"; };
 		22F2B03019A5C4B100939296 /* PhotoBrowserCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCollectionViewController.swift; sourceTree = "<group>"; };
+		2EB4E1671D1483EA002D10BC /* Pods_Photomania.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Photomania.framework; path = "../../../Library/Developer/Xcode/DerivedData/Photomania-adjypjsvkhqznqeyeobrttnagdzy/Build/Products/Debug-iphonesimulator/Pods_Photomania.framework"; sourceTree = "<group>"; };
+		9507CFF8ED7FD6231BA10A5F /* Pods-Photomania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photomania.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photomania/Pods-Photomania.debug.xcconfig"; sourceTree = "<group>"; };
+		ADB98AF8F5E8848D9B571B8F /* Pods-Photomania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photomania.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photomania/Pods-Photomania.release.xcconfig"; sourceTree = "<group>"; };
 		BF2A19001BA41AB500B38EDC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		BFA3463D1BA6BFF000758461 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3FF220C64BEF32CB81968F5 /* Pods_Photomania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photomania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2A19121BA41AC500B38EDC /* Alamofire.framework in Frameworks */,
+				23E3E049CB5CF70FB706BCC6 /* Pods_Photomania.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,13 +134,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03305CAED983AC0D0F405FF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9507CFF8ED7FD6231BA10A5F /* Pods-Photomania.debug.xcconfig */,
+				ADB98AF8F5E8848D9B571B8F /* Pods-Photomania.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		22F2B00219A5C39900939296 = {
 			isa = PBXGroup;
 			children = (
+				22F2B01019A5C39900939296 /* AppDelegate.swift */,
 				BF2A19001BA41AB500B38EDC /* Alamofire.xcodeproj */,
 				22F2B00D19A5C39900939296 /* Photomania */,
 				22F2B02019A5C39A00939296 /* PhotomaniaTests */,
 				22F2B00C19A5C39900939296 /* Products */,
+				03305CAED983AC0D0F405FF7 /* Pods */,
+				9AF806D7A6B810D78457CF8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +168,6 @@
 		22F2B00D19A5C39900939296 /* Photomania */ = {
 			isa = PBXGroup;
 			children = (
-				22F2B01019A5C39900939296 /* AppDelegate.swift */,
 				22F2B03019A5C4B100939296 /* PhotoBrowserCollectionViewController.swift */,
 				22056D0F19AA62C900F7A88B /* PhotoViewerViewController.swift */,
 				22056D1119AB16C100F7A88B /* PhotoDetailsViewController.swift */,
@@ -191,6 +208,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9AF806D7A6B810D78457CF8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EB4E1671D1483EA002D10BC /* Pods_Photomania.framework */,
+				D3FF220C64BEF32CB81968F5 /* Pods_Photomania.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF2A19011BA41AB500B38EDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +236,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F2B02719A5C39A00939296 /* Build configuration list for PBXNativeTarget "Photomania" */;
 			buildPhases = (
+				E562B741A08099D92CCC6948 /* [CP] Check Pods Manifest.lock */,
 				22F2B00719A5C39900939296 /* Sources */,
 				22F2B00819A5C39900939296 /* Frameworks */,
 				22F2B00919A5C39900939296 /* Resources */,
 				223F8FB419CB697D00750D7B /* Embed Frameworks */,
+				842814842E8705278A9064DB /* [CP] Embed Pods Frameworks */,
+				47A07C1DB11B689594BCB312 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +279,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Essan Parto";
+				ORGANIZATIONNAME = DRL;
 				TargetAttributes = {
 					22F2B00A19A5C39900939296 = {
 						CreatedOnToolsVersion = 6.0;
@@ -264,7 +293,7 @@
 				};
 			};
 			buildConfigurationList = 22F2B00619A5C39900939296 /* Build configuration list for PBXProject "Photomania" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -345,6 +374,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47A07C1DB11B689594BCB312 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photomania/Pods-Photomania-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842814842E8705278A9064DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photomania/Pods-Photomania-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E562B741A08099D92CCC6948 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22F2B00719A5C39900939296 /* Sources */ = {
@@ -477,6 +554,7 @@
 		};
 		22F2B02819A5C39A00939296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9507CFF8ED7FD6231BA10A5F /* Pods-Photomania.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -484,7 +562,7 @@
 				INFOPLIST_FILE = Photomania/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.durul.Photomania;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -492,6 +570,7 @@
 		};
 		22F2B02919A5C39A00939296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB98AF8F5E8848D9B571B8F /* Pods-Photomania.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -499,7 +578,7 @@
 				INFOPLIST_FILE = Photomania/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.durul.Photomania;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

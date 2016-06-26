@@ -1,0 +1,6 @@
+framework module Pods_Photomania {
+  umbrella header "Pods-Photomania-umbrella.h"
+
+  export *
+  module * { export * }
+}
